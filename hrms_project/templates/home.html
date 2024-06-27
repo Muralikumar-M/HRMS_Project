@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block home %}
+<div class='p-4 d-flex'>
+    {% for survey in surveys %}
+    <div class="rounded bg-white m-3 p-3" id="{{survey['id']}}" onclick="gotoSurvey(this)">
+        <h3>{{ survey['survey_name'] }}</h3>
+    </div>
+    {% endfor %}
+</div>
+<script>
+    
+</script>
+{% endblock home %}
